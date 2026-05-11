@@ -116,6 +116,7 @@ export default function About() {
                     src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80"
                     alt="Students studying at Success Boys Hostel"
                     fill
+                    sizes='100vw'
                     className="object-cover"
                   />
                 </div>
