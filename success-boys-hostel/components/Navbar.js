@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+
+
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/rooms', label: 'Rooms' },
   { href: '/facilities', label: 'Facilities' },
-  { href: '/prices', label: 'Prices' },
+  // { href: '/prices', label: 'Prices' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
 ]

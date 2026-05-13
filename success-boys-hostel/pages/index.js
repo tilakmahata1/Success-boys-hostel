@@ -88,7 +88,7 @@ export default function Home() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-green-950/90 via-green-900/75 to-green-700/50" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-emerald-900/60 to-black/40" />
         </div>
 
         {/* Decorative elements */}
@@ -96,7 +96,7 @@ export default function Home() {
         <div className="absolute bottom-1/4 left-10 w-48 h-48 bg-green-300/10 rounded-full blur-2xl" />
 
         {/* Hero content */}
-        <div className="relative z-10 container-custom text-center pt-24 pb-16">
+        <div className="relative z-30 container-custom text-center pt-24 pb-16">
           <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-400/30 text-green-200 px-4 py-1.5 rounded-full text-sm font-body font-medium mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             Accepting Students for 2082/2083 BS

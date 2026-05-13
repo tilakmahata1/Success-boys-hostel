@@ -65,7 +65,7 @@ export default function About() {
       />
 
       {/* ── STORY SECTION ── */}
-      <section className="section-padding bg-cream">
+      <section id="about" className="section-padding bg-cream ">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">

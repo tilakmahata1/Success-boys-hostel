@@ -13,7 +13,7 @@ export default function PageHero({ title, subtitle, image, breadcrumb }) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-emerald-900/60 to-black/40" />
       </div>
 
       {/* Content */}
