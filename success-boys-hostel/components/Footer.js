@@ -14,13 +14,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-green-950 text-white ">
+    <footer className="bg-green-950 text-white  ">
       {/* Main footer */}
-      <div className="container-custom py-16  ">
+      <div className="container-custom py-16 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+          <div className="lg:col-span-1 ">
+            <div className="flex items-center gap-2 mb-4 align-center justify-center md:justify-start">
               <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center">
                 <span className="text-white text-xl font-display font-bold">S</span>
               </div>
@@ -33,7 +33,7 @@ export default function Footer() {
               Your study home in the heart of Kathmandu. Safe, clean, and affordable accommodation for students from across Nepal.
             </p>
             {/* Social */}
-            <div className="flex gap-3 ">
+            <div className="flex gap-3 align-center justify-center md:justify-start">
               <a
                 href="https://www.facebook.com/share/p/14arE9KLiJH/"
                 target="_blank"
@@ -46,7 +46,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="tel:+977-01-XXXXXXX"
+                href="tel:+977-01-09345"
                 className="w-9 h-9 bg-green-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
                 aria-label="Phone"
               >
@@ -55,7 +55,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:info@successboyshostel.com.np"
+                href="mailto:successboyshostel@gmail.com"
                 className="w-9 h-9 bg-green-800 hover:bg-green-600 rounded-lg flex items-center justify-center transition-colors"
                 aria-label="Email"
               >
@@ -67,27 +67,30 @@ export default function Footer() {
           </div>
 
           {/* Quick links */}
-          <div>
-            <h4 className="font-display font-semibold text-white mb-5  text-lg ">Quick Links</h4>
-            <ul className=" space-y-2 ">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-green-300 hover:text-green-400 text-sm font-body transition-colors flex items-center gap-1.5 group"
-                  >
-                    <span className="w-1 h-1 bg-green-500 rounded-full group-hover:w-2 transition-all" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="text-center md:text-left">
+  <h4 className="font-display font-semibold text-white mb-5 text-lg">
+    Quick Links
+  </h4>
+
+  <ul className="space-y-2 flex flex-col items-center md:items-start">
+    {quickLinks.map((link) => (
+      <li key={link.href}>
+        <Link
+          href={link.href}
+          className="text-green-300 hover:text-green-400 text-sm font-body transition-colors flex items-center gap-1.5 group"
+        >
+          <span className="w-1 h-1 bg-green-500 rounded-full group-hover:w-2 transition-all" />
+          {link.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Facilities */}
-          <div>
+          <div className='text-center md:text-left'>
             <h4 className="font-display font-semibold text-white mb-5 text-lg">Our Facilities</h4>
-            <ul className="space-y-2 text-sm text-green-300 font-body">
+            <ul className="space-y-2 text-sm text-green-300 font-body flex flex-col items-center md:items-start">
               {[
                 'Free High-Speed WiFi',
                 'Quality Dal Bhat Meals',
@@ -109,9 +112,9 @@ export default function Footer() {
           </div>
 
           {/* Contact info */}
-          <div>
+          <div className='text-center md:text-left'>
             <h4 className="font-display font-semibold text-white mb-5 text-lg">Contact Us</h4>
-            <ul className="space-y-4 font-body">
+            <ul className="space-y-4 font-body flex flex-col items-center md:items-start">
               <li className="flex items-start gap-3 text-sm text-green-300">
                 <svg className="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
